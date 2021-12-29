@@ -102,3 +102,14 @@ img.about_us_right_img:hover {
 .about_us_left {
     color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+    .about_us_container {
+        flex-direction: column !important;
+    }
+
+    img.about_us_right_img {
+        height: 250px;
+        margin-top: 20px;
+    }
+}
