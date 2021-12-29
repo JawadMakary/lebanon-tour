@@ -5,17 +5,18 @@
 }
 body {
   font-family: system-ui;
+  overflow-x: hidden;
 }
 .container {
   background-image: url("images/backg.jpg");
   width: 100vw;
-  height: 100vh;
+  height: 1210px;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 img.img_logo {
-  width: 75px;
+  width: 105px;
   height: 75px;
   object-fit: cover;
   margin-left: 15px;
@@ -47,11 +48,12 @@ a.header_link {
 }
 span {
   color: #fff;
+  font-size: 16px;
 }
 
 .bg-overlay {
   width: 100vw;
-  height: 100vh;
+  height: 1210px;
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -149,8 +151,19 @@ p.main_place_name {
 }
 
 /* media query  */
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px ) and (min-width: 690px) {
+    img.main_img {
+        width: 230px;
+    }
+    .main_right {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    h1.main_h1 {
+        font-size: 44px !important;
+    }
+}
+@media screen and (max-width: 688px) {
     .main_container {
         display: flex;
         flex-direction: column;
@@ -160,5 +173,31 @@ p.main_place_name {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    img.main_img {
+        width: 135px;
+    }
+    h1.main_h1 {
+        font-size: 52px !important;
+    }
+    p.main_p {
+        font-size: 17px;
+        text-align: center;
+    }
+    span {
+        font-size: 13px;
+    }
+}
+/*  for tablet screens */
+
+@media screen and (max-width: 1024px) {
    
+    h1.main_h1 {
+        font-size: 56px;
+    }
+    .container{
+        height: 1410px;
+    }
+  .bg-overlay{
+      height: 1410px;
+  }
 }

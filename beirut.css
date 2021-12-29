@@ -15,7 +15,7 @@ body {
 }
 
 img.img_logo {
-    width: 75px;
+    width: 105px;
     height: 75px;
     object-fit: cover;
     margin-left: 15px;
@@ -91,4 +91,19 @@ img.img_place:hover {
 p.place_details {
     font-size: 19px;
     line-height: 1.8;
+}
+
+
+@media screen and (max-width: 768px) {
+    .place_container {
+        display: flex;
+        flex-direction: column;
+    }
+    img.img_place {
+        height: 250px;
+        margin-top: 20px;
+    }
+    span {
+        font-size: 13px;
+    }
 }
